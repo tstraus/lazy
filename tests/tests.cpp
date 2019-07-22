@@ -25,6 +25,42 @@ const lest::test t[] =
         EXPECT(s.evaluated() == true);
         EXPECT(first == second);
     },
+    CASE("StringGetOperator" "[tstraus::Lazy]")
+    {
+        Lazy<string> s([]() {
+            //cout << "evaluating" << endl;
+
+            return "I'm Lazy";
+        });
+
+        EXPECT(s.evaluated() == false);
+
+        string first = s();
+        string second = s();
+
+        EXPECT(s.evaluated() == true);
+        EXPECT(first == second);
+    },
+    CASE("StringCreateOperator" "[tstraus::Lazy]")
+    {
+        Lazy<string> s([]() {
+            //cout << "evaluating" << endl;
+
+            return "I'm Lazy";
+        });
+
+        s = []() {
+            return "I'm Even Lazier";
+        };
+
+        EXPECT(s.evaluated() == false);
+
+        const string first = s.get();
+        const string second = s.get();
+
+        EXPECT(s.evaluated() == true);
+        EXPECT(first == second);
+    },
     CASE("StringCaptured" "[tstraus::Lazy]")
     {
         const string c = "I'm Lazy and Capturing";

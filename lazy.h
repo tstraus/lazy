@@ -12,7 +12,7 @@ namespace tstraus
             this->fun = fun;
         }
 
-        Lazy(const Lazy& l)
+        Lazy(const Lazy<T>& l)
         {
             fun = l.fun;
             t = l.t;
@@ -29,6 +29,16 @@ namespace tstraus
         bool evaluated() const
         {
             return t != nullptr;
+        }
+
+        T operator()()
+        {
+            return this->get();
+        }
+
+        Lazy<T> operator=(const std::function<T()>& t)
+        {
+            return Lazy<T>(t);
         }
 
     private:
