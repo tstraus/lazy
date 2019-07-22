@@ -1,3 +1,3 @@
-#### Channel
+#### Lazy
 
-A golang style channel using c++11
+Lazy evaluation of lambdas
