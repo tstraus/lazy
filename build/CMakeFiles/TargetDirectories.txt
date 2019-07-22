@@ -1,5 +1,0 @@
-/home/tstraus/Code/lazy/build/CMakeFiles/rebuild_cache.dir
-/home/tstraus/Code/lazy/build/CMakeFiles/edit_cache.dir
-/home/tstraus/Code/lazy/build/tests/CMakeFiles/rebuild_cache.dir
-/home/tstraus/Code/lazy/build/tests/CMakeFiles/LazyTest.dir
-/home/tstraus/Code/lazy/build/tests/CMakeFiles/edit_cache.dir

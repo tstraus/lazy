@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/tstraus/Code/lazy/build/tests",
-  "command": "/usr/bin/c++   -I/home/tstraus/Code/lazy/tests/..  -g   -std=gnu++17 -o CMakeFiles/LazyTest.dir/tests.cpp.o -c /home/tstraus/Code/lazy/tests/tests.cpp",
-  "file": "/home/tstraus/Code/lazy/tests/tests.cpp"
-}
-]

@@ -9,3 +9,5 @@ cmake-build-release/
 *.dll
 *.so
 *.a
+*.swp
+*.swo
