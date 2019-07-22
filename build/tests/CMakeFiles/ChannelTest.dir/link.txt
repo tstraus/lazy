@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/ChannelTest.dir/tests.cpp.o  -o ChannelTest -lpthread 
