@@ -116,6 +116,7 @@ const lest::test t[] =
         EXPECT(s2.evaluated() == false);
 
         const auto first = s2.get();
+        EXPECT(s1.evaluated() == false);
         EXPECT(s2.evaluated() == true);
 
         const auto second = s1.get();
